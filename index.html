@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+        <!--dolar to R$ JS-->
+    <div class="container">
+        <div class="box">
+            <h1>Conversor</h1>
+            <br>                                                                                                        <!--block negative values or "-" signal -->
+            <input type="number" id="real" placeholder="R$ - real" onkeyup="converterMoedas();" autocomplete="off" min="0" max="2147483647" oninput="validity.valid || (value='');">
+            <select name="" id="cotacoes" >
+                <option value="5.17" id="dolar" selected>dolar</option>
+                <option value="7.30" id="libra" >libra</option>
+                <option value="5.86" id="euro" >euro</option>
+                <option value="0.045" id="yen" >yen</option>
+                <option value="0.0000048" id="bitcoin" >bitcoin</option>
+                <option value="0.000067" id="eth">ethereum</option>
+            </select>
+    
+            <button onclick="converterMoedas()">converter</button>
+
+            <p id="result">-</p>
+
+        </div>
+
+    </div>
+
+        <!--dolar to real JS-->
+        <script src="app.js"></script>
+
+
+
+</body>
+</html>
